@@ -1,1 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Complete guide to professional cleaning services in Amsterdam. Browse all articles on end of tenancy cleaning, move out cleaning, deep cleaning and more.">
+  <link href="https://storage.googleapis.com/scalenut/webflow%20assests/61153269082539deef9b78ea_favicon.png" rel="shortcut icon" type="image/x-icon">
+  <title>Professional Cleaning Services Amsterdam — Complete Guide Hub | Clean4u</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background-color: #f1f5f9;
+      color: #475569;
+      font-size: 1rem;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page-wrapper { min-height: 100vh; padding: 0 0 5rem; }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 60%, #1d4ed8 100%);
+      padding: 5rem 1.5rem 4rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+    .hero-inner { position: relative; max-width: 780px; margin: 0 auto; }
+    .hero-badge {
+      display: inline-block; background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #bfdbfe; font-size: 0.75rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 0.35rem 1rem; border-radius: 9999px; margin-bottom: 1.5rem;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 900; color: #fff;
+      line-height: 1.1; letter-spacing: -0.03em; margin-bottom: 1.25rem;
+    }
+    .hero h1 span { color: #60a5fa; }
+    .hero p { color: #93c5fd; font-size: 1.1rem; max-width: 580px; margin: 0 auto 2rem; line-height: 1.7; }
+    .hero-stats {
+      display: flex; justify-content: center; flex-wrap: wrap; gap: 2rem;
+      margin-top: 2.5rem; padding-top: 2.5rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    .hero-stat { text-align: center; }
+    .hero-stat .s-num { font-size: 1.75rem; font-weight: 900; color: #fff; letter-spacing: -0.03em; }
+    .hero-stat .s-label { font-size: 0.8rem; color: #93c5fd; font-weight: 500; }
+
+    /* ── Guarantee bar ── */
+    .guarantee-bar {
+      background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+      border-bottom: 1px solid #bbf7d0;
+      padding: 0.9rem 1.5rem;
+      display: flex; align-items: center; justify-content: center; gap: 0.75rem;
+      font-size: 0.9rem; font-weight: 600; color: #15803d;
+    }
+    .guarantee-bar svg { width: 18px; height: 18px; stroke: #16a34a; flex-shrink: 0; }
+
+    /* ── Main container ── */
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* ── Section headings ── */
+    .section-label {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; color: #94a3b8; margin-bottom: 0.5rem;
+    }
+    .section-title {
+      font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 900;
+      color: #0f172a; letter-spacing: -0.025em; line-height: 1.2;
+      margin-bottom: 0.5rem;
+    }
+    .section-desc { color: #64748b; font-size: 0.95rem; max-width: 560px; }
+    .section-header { margin: 3.5rem 0 2rem; }
+
+    /* ── FEATURED article ── */
+    .featured-card {
+      background: #fff;
+      border-radius: 1.5rem;
+      border: 1px solid #e2e8f0;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 3rem;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+    .featured-card:hover { box-shadow: 0 12px 40px rgba(0,0,0,0.1); transform: translateY(-3px); }
+    @media (max-width: 700px) { .featured-card { grid-template-columns: 1fr; } }
+
+    .featured-img { position: relative; overflow: hidden; min-height: 280px; }
+    .featured-img img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.5s ease; display: block;
+    }
+    .featured-card:hover .featured-img img { transform: scale(1.04); }
+    .featured-tag {
+      position: absolute; top: 1rem; left: 1rem;
+      background: #2563eb; color: #fff;
+      font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; padding: 0.3rem 0.75rem; border-radius: 9999px;
+    }
+
+    .featured-body { padding: 2.5rem; display: flex; flex-direction: column; justify-content: center; }
+    .featured-category {
+      font-size: 0.75rem; font-weight: 700; color: #2563eb;
+      text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.75rem;
+    }
+    .featured-body h2 {
+      font-size: clamp(1.3rem, 2.5vw, 1.75rem); font-weight: 900;
+      color: #0f172a; line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 0.85rem;
+    }
+    .featured-body p { color: #64748b; font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem; }
+    .featured-meta { display: flex; align-items: center; gap: 1rem; font-size: 0.82rem; color: #94a3b8; margin-bottom: 1.5rem; }
+    .featured-meta span { display: flex; align-items: center; gap: 0.3rem; }
+    .featured-meta svg { width: 13px; height: 13px; }
+    .read-btn {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: #2563eb; color: #fff; font-weight: 700; font-size: 0.875rem;
+      padding: 0.7rem 1.5rem; border-radius: 9999px; text-decoration: none;
+      transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 2px 8px rgba(37,99,235,0.3); align-self: flex-start;
+    }
+    .read-btn:hover { background: #1d4ed8; transform: translateY(-1px); box-shadow: 0 4px 16px rgba(37,99,235,0.4); }
+    .read-btn svg { width: 16px; height: 16px; }
+
+    /* ── Article grid ── */
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .article-card {
+      background: #fff; border-radius: 1.25rem;
+      border: 1px solid #e2e8f0; overflow: hidden;
+      display: flex; flex-direction: column;
+      transition: box-shadow 0.3s, transform 0.3s;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    }
+    .article-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.1); transform: translateY(-3px); }
+
+    .card-img { position: relative; height: 200px; overflow: hidden; flex-shrink: 0; }
+    .card-img img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.5s ease; display: block;
+    }
+    .article-card:hover .card-img img { transform: scale(1.05); }
+    .card-tag {
+      position: absolute; top: 0.85rem; left: 0.85rem;
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; padding: 0.25rem 0.65rem; border-radius: 9999px;
+    }
+    .tag-blue { background: #eff6ff; color: #2563eb; }
+    .tag-green { background: #f0fdf4; color: #16a34a; }
+    .tag-purple { background: #faf5ff; color: #7c3aed; }
+    .tag-orange { background: #fff7ed; color: #c2410c; }
+    .tag-teal { background: #f0fdfa; color: #0f766e; }
+    .tag-red { background: #fff1f2; color: #be123c; }
+
+    .card-body { padding: 1.5rem; display: flex; flex-direction: column; flex: 1; }
+    .card-category { font-size: 0.72rem; font-weight: 700; color: #2563eb; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem; }
+    .card-body h3 { font-size: 1.05rem; font-weight: 800; color: #0f172a; line-height: 1.3; letter-spacing: -0.015em; margin-bottom: 0.6rem; }
+    .card-body p { font-size: 0.875rem; color: #64748b; line-height: 1.65; margin-bottom: 1.25rem; flex: 1; }
+    .card-meta { display: flex; align-items: center; gap: 0.75rem; font-size: 0.78rem; color: #94a3b8; margin-bottom: 1.1rem; }
+    .card-meta span { display: flex; align-items: center; gap: 0.25rem; }
+    .card-meta svg { width: 12px; height: 12px; }
+    .card-link {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      color: #2563eb; font-weight: 700; font-size: 0.85rem;
+      text-decoration: none; transition: gap 0.2s, color 0.2s;
+    }
+    .card-link:hover { color: #1d4ed8; gap: 0.6rem; }
+    .card-link svg { width: 15px; height: 15px; transition: transform 0.2s; }
+    .card-link:hover svg { transform: translateX(2px); }
+
+    /* ── Divider ── */
+    .section-divider { border: none; border-top: 1px solid #e2e8f0; margin: 3.5rem 0; }
+
+    /* ── GMB CARD ── */
+    .gmb-section {
+      background: #fff;
+      border-radius: 1.5rem;
+      border: 1px solid #e2e8f0;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    }
+    .gmb-inner {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+    }
+    @media (max-width: 768px) { .gmb-inner { grid-template-columns: 1fr; } }
+
+    .gmb-map {
+      position: relative;
+      min-height: 320px;
+      background: #e2e8f0;
+      overflow: hidden;
+    }
+    .gmb-map iframe {
+      width: 100%; height: 100%; border: none; display: block;
+      min-height: 320px;
+    }
+
+    .gmb-info { padding: 2rem 2.25rem; display: flex; flex-direction: column; justify-content: center; }
+    .gmb-badge {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      background: #f0fdf4; border: 1px solid #bbf7d0;
+      color: #15803d; font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      padding: 0.3rem 0.75rem; border-radius: 9999px; margin-bottom: 1rem;
+      align-self: flex-start;
+    }
+    .gmb-badge svg { width: 13px; height: 13px; stroke: #16a34a; }
+    .gmb-info h2 {
+      font-size: 1.5rem; font-weight: 900; color: #0f172a;
+      letter-spacing: -0.025em; line-height: 1.2; margin-bottom: 0.35rem;
+    }
+    .gmb-stars {
+      display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1.1rem;
+    }
+    .gmb-stars .stars { color: #f59e0b; font-size: 1rem; letter-spacing: 0.05em; }
+    .gmb-stars .rating { font-weight: 800; color: #0f172a; font-size: 1rem; }
+    .gmb-stars .reviews { color: #64748b; font-size: 0.85rem; }
+
+    .gmb-details { display: flex; flex-direction: column; gap: 0.65rem; margin-bottom: 1.5rem; }
+    .gmb-detail { display: flex; align-items: flex-start; gap: 0.65rem; font-size: 0.9rem; color: #475569; }
+    .gmb-detail svg { width: 16px; height: 16px; stroke: #3b82f6; flex-shrink: 0; margin-top: 3px; }
+    .gmb-detail strong { color: #0f172a; }
+
+    .gmb-hours {
+      background: #f8fafc; border: 1px solid #e2e8f0;
+      border-radius: 0.85rem; padding: 1rem 1.25rem; margin-bottom: 1.5rem;
+    }
+    .gmb-hours-title {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; color: #94a3b8; margin-bottom: 0.75rem;
+    }
+    .gmb-hours-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.3rem 1rem; }
+    .gmb-hour-row { display: flex; justify-content: space-between; font-size: 0.85rem; }
+    .gmb-hour-row .day { color: #64748b; font-weight: 500; }
+    .gmb-hour-row .time { color: #0f172a; font-weight: 600; }
+    .gmb-hour-row .closed { color: #dc2626; font-weight: 600; }
+
+    .gmb-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .gmb-btn-primary {
+      display: inline-flex; align-items: center; gap: 0.45rem;
+      background: #2563eb; color: #fff; font-weight: 700; font-size: 0.875rem;
+      padding: 0.7rem 1.4rem; border-radius: 9999px; text-decoration: none;
+      transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 2px 8px rgba(37,99,235,0.3);
+    }
+    .gmb-btn-primary:hover { background: #1d4ed8; transform: translateY(-1px); box-shadow: 0 4px 16px rgba(37,99,235,0.4); }
+    .gmb-btn-primary svg { width: 15px; height: 15px; }
+    .gmb-btn-secondary {
+      display: inline-flex; align-items: center; gap: 0.45rem;
+      background: #fff; color: #0f172a; font-weight: 700; font-size: 0.875rem;
+      padding: 0.7rem 1.4rem; border-radius: 9999px; text-decoration: none;
+      border: 1.5px solid #e2e8f0;
+      transition: border-color 0.2s, background 0.2s, transform 0.2s;
+    }
+    .gmb-btn-secondary:hover { border-color: #bfdbfe; background: #eff6ff; transform: translateY(-1px); }
+    .gmb-btn-secondary svg { width: 15px; height: 15px; stroke: #3b82f6; }
+
+    /* ── New Article Card (Oracle) ── */
+    .oracle-card {
+      background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+      border-radius: 1.25rem;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow 0.3s, transform 0.3s;
+      box-shadow: 0 4px 24px rgba(15,23,42,0.2);
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+    .oracle-card:hover { box-shadow: 0 12px 40px rgba(15,23,42,0.3); transform: translateY(-3px); }
+    .oracle-card .card-img { height: 200px; }
+    .oracle-card .card-body { background: transparent; }
+    .oracle-card .card-category { color: #93c5fd; }
+    .oracle-card h3 { color: #f8fafc; }
+    .oracle-card p { color: #94a3b8; }
+    .oracle-card .card-meta { color: #64748b; }
+    .oracle-card .card-link { color: #60a5fa; }
+    .oracle-card .card-link:hover { color: #93c5fd; }
+    .oracle-card .tag-featured {
+      background: rgba(37,99,235,0.9); color: #fff;
+    }
+
+    /* ── Backlinks section ── */
+    .backlinks-section {
+      background: #fff; border-radius: 1.5rem;
+      border: 1px solid #e2e8f0; padding: 2.5rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    }
+    .backlinks-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 0.85rem; margin-top: 1.75rem;
+    }
+    .backlink-item {
+      display: flex; align-items: center; gap: 0.85rem;
+      background: #f8fafc; border: 1px solid #e2e8f0;
+      border-radius: 0.85rem; padding: 0.9rem 1.1rem;
+      text-decoration: none; transition: background 0.2s, border-color 0.2s, transform 0.2s;
+    }
+    .backlink-item:hover { background: #eff6ff; border-color: #bfdbfe; transform: translateY(-1px); }
+    .bl-icon {
+      flex-shrink: 0; width: 36px; height: 36px;
+      background: linear-gradient(135deg, #dbeafe, #e0e7ff);
+      border-radius: 0.6rem; display: flex; align-items: center; justify-content: center;
+    }
+    .bl-icon svg { width: 17px; height: 17px; stroke: #3b82f6; }
+    .bl-text { min-width: 0; }
+    .bl-title { font-size: 0.88rem; font-weight: 700; color: #0f172a; line-height: 1.3; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .bl-url { font-size: 0.73rem; color: #94a3b8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .bl-arrow { flex-shrink: 0; margin-left: auto; }
+    .bl-arrow svg { width: 14px; height: 14px; stroke: #94a3b8; }
+
+    /* ── CTA block ── */
+    .cta-block {
+      background: linear-gradient(135deg, #1d4ed8 0%, #4f46e5 100%);
+      border-radius: 1.5rem; padding: 3rem 2rem;
+      text-align: center; margin-top: 3rem;
+    }
+    .cta-block h2 { color: #fff; font-size: 1.75rem; font-weight: 900; margin-bottom: 0.6rem; letter-spacing: -0.02em; }
+    .cta-block p { color: #bfdbfe; font-size: 1rem; margin-bottom: 1.75rem; }
+    .cta-btn {
+      display: inline-block; background: #fff; color: #1d4ed8;
+      font-weight: 700; font-size: 0.95rem; padding: 0.85rem 2.25rem;
+      border-radius: 9999px; text-decoration: none;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+
+    /* ── Footer ── */
+    .site-footer {
+      text-align: center; padding: 2.5rem 1.5rem;
+      font-size: 0.85rem; color: #94a3b8; border-top: 1px solid #e2e8f0;
+      margin-top: 4rem;
+    }
+    .site-footer a { color: #2563eb; text-decoration: underline; text-decoration-color: #bfdbfe; }
+  </style>
+</head>
+<body>
+
+<!-- ══ HERO ══ -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">Clean4u Amsterdam — Complete Resource Hub</div>
+    <h1>Professional Cleaning<br><span>Services in Amsterdam</span></h1>
+    <p>Everything you need to know about end of tenancy cleaning, move-out cleans, deep cleaning and more — in one place.</p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="s-num">10</div>
+        <div class="s-label">In-depth guides</div>
+      </div>
+      <div class="hero-stat">
+        <div class="s-num">7-Day</div>
+        <div class="s-label">Re-clean guarantee</div>
+      </div>
+      <div class="hero-stat">
+        <div class="s-num">100%</div>
+        <div class="s-label">Eco-friendly products</div>
+      </div>
+      <div class="hero-stat">
+        <div class="s-num">★ 5.0</div>
+        <div class="s-label">Verified reviews</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ GUARANTEE BAR ══ -->
+<div class="guarantee-bar">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+  </svg>
+  7-Day Re-Clean Guarantee — Not satisfied? We return and re-clean at no extra cost.
+</div>
+
+<div class="page-wrapper">
+  <div class="container">
+
+    <!-- ══ FEATURED ARTICLE ══ -->
+    <div class="section-header">
+      <div class="section-label">Featured Guide</div>
+      <div class="section-title">Start Here</div>
+      <div class="section-desc">Our most comprehensive guide to end-of-tenancy cleaning in Amsterdam — everything in one place.</div>
+    </div>
+
+    <a href="https://amsterdam-cleaning-seo-backlinks.nl-ams-1.linodeobjects.com/what-to-expect-end-of-tenancy-cleaning-amsterdam.html" rel="noopener noreferrer" target="_blank" class="featured-card" style="text-decoration:none;color:inherit;">
+      <div class="featured-img">
+        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80&auto=format&fit=crop" alt="Professional end of tenancy cleaning Amsterdam apartment">
+        <span class="featured-tag">⭐ Featured</span>
+      </div>
+      <div class="featured-body">
+        <div class="featured-category">End of Tenancy</div>
+        <h2>What to Expect During an End-of-Tenancy Cleaning in Amsterdam</h2>
+        <p>A complete walkthrough of the professional end-of-tenancy cleaning process — from initial assessment and deep kitchen clean through to cost breakdown, choosing the right service, and last-minute tips for securing your full deposit back.</p>
+        <div class="featured-meta">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            11 min read
+          </span>
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4"/></svg>
+            Deposit guarantee
+          </span>
+        </div>
+        <span class="read-btn">
+          Read Full Guide
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </span>
+      </div>
+    </a>
+
+    <hr class="section-divider">
+
+    <!-- ══ ALL ARTICLES ══ -->
+    <div class="section-header">
+      <div class="section-label">All Guides</div>
+      <div class="section-title">Complete Article Library</div>
+      <div class="section-desc">Browse every guide — from move-out checklists to cost comparisons and professional service overviews.</div>
+    </div>
+
+    <div class="articles-grid">
+
+      <!-- NEW: Oracle Cloud Article -->
+      <a href="https://objectstorage.eu-amsterdam-1.oraclecloud.com/n/axbpp0iicxjv/b/cleaning-service-amsterdam/o/Clean4u%20Amsterdam%20end-of-tenancy-cleaning-amsterdam.html" rel="noopener noreferrer" target="_blank" class="article-card oracle-card" style="text-decoration:none;color:inherit;">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80&auto=format&fit=crop" alt="End of tenancy cleaning Amsterdam Clean4u">
+          <span class="card-tag tag-featured" style="background:rgba(37,99,235,0.9);color:#fff;">🏠 Must Read</span>
+        </div>
+        <div class="card-body">
+          <div class="card-category">End of Tenancy</div>
+          <h3>Clean4u Amsterdam — End of Tenancy Cleaning Guide</h3>
+          <p>A comprehensive professional guide covering the full end-of-tenancy cleaning process in Amsterdam — what's included, deposit recovery tips, pricing and how to book.</p>
+          <div class="card-meta">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              10 min read
+            </span>
+          </div>
+          <span class="card-link">
+            Read Article
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </span>
+        </div>
+      </a>
+
+      <!-- 1 -->
+      <div class="article-card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1527515545081-5db817172677?w=600&q=80&auto=format&fit=crop" alt="End of tenancy cleaning Amsterdam">
+          <span class="card-tag tag-blue">End of Tenancy</span>
+        </div>
+        <div class="card-body">
+          <div class="card-category">Move Out</div>
+          <h3>End of Tenancy Cleaning Amsterdam: Affordable Tenancy Clean Services</h3>
+          <p>A deep dive into everything tenants and landlords need to know about end-of-tenancy cleaning in Amsterdam — process, pricing, what's included and how to get your full deposit back.</p>
+          <div class="card-meta">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              9 min read
+            </span>
+          </div>
+          <a href="https://amsterdamcleaning.com/end-of-tenancy-cleaning/" rel="noopener noreferrer" target="_blank" class="card-link">
+            Read Article
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="article-card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1563453392212-326f5e854473?w=600&q=80&auto=format&fit=crop" alt="End of tenancy cleaning checklist Amsterdam">
+          <span class="card-tag tag-purple">Checklist</span>
+        </div>
+        <div class="card-body">
+          <div class="card-category">Checklist Guide</div>
+          <h3>Complete Room-by-Room End of Tenancy Cleaning Checklist Amsterdam</h3>
+          <p>A detailed room-by-room checklist covering bedrooms, bathrooms, kitchens, carpets, windows, appliances and storage — everything landlords inspect and expect to be spotless.</p>
+          <div class="card-meta">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              12 min read
+            </span>
+          </div>
+          <a href="https://clean4u-asterdam-2026.s3.eu-central-003.backblazeb2.com/end-of-tenancy-cleaning-checklist-amsterdam.html" rel="noopener noreferrer" target="_blank" class="card-link">
+            Read Article
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="article-card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&q=80&auto=format&fit=crop" alt="Pros cons DIY professional end of tenancy cleaning Amsterdam">
+          <span class="card-tag tag-teal">Comparison</span>
+        </div>
+        <div class="card-body">
+          <div class="card-category">DIY vs Professional</div>
+          <h3>Pros & Cons: DIY vs Professional End of Tenancy Cleaning Amsterdam</h3>
+          <p>An honest, balanced comparison of tackling your end-of-tenancy clean yourself versus hiring professionals — covering cost, time, quality, deposit risk and long-term value.</p>
+          <div class="card-meta">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              8 min read
+            </span>
+          </div>
+          <a href="https://cleaningserviceamsterdam.ams3.digitaloceanspaces.com/pros-cons-end-of-tenancy-cleaning-amsterdam.html" rel="noopener noreferrer" target="_blank" class="card-link">
+            Read Article
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="article-card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=600&q=80&auto=format&fit=crop" alt="Deep cleaning vs regular cleaning cost Amsterdam">
+          <span class="card-tag tag-orange">Cost Guide</span>
+        </div>
+        <div class="card-body">
+          <div class="card-category">Pricing & Costs</div>
+          <h3>Deep Cleaning vs Regular Cleaning: Cost Comparison Guide</h3>
+          <p>Understand the real difference in price and scope between a deep clean and regular maintenance cleaning in the Netherlands — with typical price ranges and comparison tables.</p>
+          <div class="card-meta">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              10 min read
+            </span>
+          </div>
+          <a href="https://clean4useostorage.blob.core.windows.net/$web/deep%20cleaning%20vs%20regular%20cleaning%20cost.html" rel="noopener noreferrer" target="_blank" class="card-link">
+            Read Article
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="article-card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80&auto=format&fit=crop" alt="Professional cleaning services Amsterdam Clean4u">
+          <span class="card-tag tag-blue">Services</span>
+        </div>
+        <div class="card-body">
+          <div class="card-category">Service Overview</div>
+          <h3>Professional Cleaning Services in Amsterdam — Complete Overview</h3>
+          <p>A full overview of every professional cleaning service available in Amsterdam — house cleaning, deep cleaning, move in/out, office cleaning, carpet and upholstery, window cleaning and more.</p>
+          <div class="card-meta">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              8 min read
+            </span>
+          </div>
+          <a href="https://clean4useostorage.blob.core.windows.net/$web/cleaning-services-amsterdam.html" rel="noopener noreferrer" target="_blank" class="card-link">
+            Read Article
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="article-card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80&auto=format&fit=crop" alt="Deep cleaning service Amsterdam">
+          <span class="card-tag tag-purple">Deep Clean</span>
+        </div>
+        <div class="card-body">
+          <div class="card-category">Deep Cleaning</div>
+          <h3>Professional Deep Cleaning Service Amsterdam</h3>
+          <p>Discover what a professional deep cleaning service in Amsterdam actually covers — tackling built-up grime, allergens, limescale, grout and every hard-to-reach area.</p>
+          <div class="card-meta">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              7 min read
+            </span>
+          </div>
+          <a href="https://amsterdamcleaning.com/deep-cleaning-service/" rel="noopener noreferrer" target="_blank" class="card-link">
+            Read Article
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="article-card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80&auto=format&fit=crop" alt="Move in cleaning Amsterdam new home">
+          <span class="card-tag tag-green">Move In</span>
+        </div>
+        <div class="card-body">
+          <div class="card-category">Move In Cleaning</div>
+          <h3>Move In Cleaning Amsterdam — Prepare Your New Home</h3>
+          <p>Starting fresh in a new Amsterdam property? A professional move-in clean ensures your new home is spotless, hygienic and truly ready — before a single box is unpacked.</p>
+          <div class="card-meta">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              6 min read
+            </span>
+          </div>
+          <a href="https://amsterdamcleaning.com/move-in-cleaning/" rel="noopener noreferrer" target="_blank" class="card-link">
+            Read Article
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="article-card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&q=80&auto=format&fit=crop" alt="Carpet sofa cleaning Amsterdam">
+          <span class="card-tag tag-orange">Specialist</span>
+        </div>
+        <div class="card-body">
+          <div class="card-category">Carpet & Sofa</div>
+          <h3>Professional Carpet & Sofa Cleaning Amsterdam</h3>
+          <p>Specialist carpet and upholstery cleaning services in Amsterdam — deep stain removal, allergen extraction and professional treatment for carpets, rugs and sofas.</p>
+          <div class="card-meta">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              5 min read
+            </span>
+          </div>
+          <a href="https://amsterdamcleaning.com/carpet-cleaning/" rel="noopener noreferrer" target="_blank" class="card-link">
+            Read Article
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="article-card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80&auto=format&fit=crop" alt="Move out cleaning Amsterdam guide">
+          <span class="card-tag tag-green">Move Out</span>
+        </div>
+        <div class="card-body">
+          <div class="card-category">Move Out Cleaning</div>
+          <h3>Ultimate Guide to Move Out Cleaning Amsterdam</h3>
+          <p>Everything you need to know before moving out of a rental in Amsterdam — who is responsible, what's included, how much it costs, and DIY vs professional cleaning compared.</p>
+          <div class="card-meta">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              10 min read
+            </span>
+          </div>
+          <a href="https://clean4useostorage.blob.core.windows.net/$web/move%20out%20cleaning%20amsterdam.html" rel="noopener noreferrer" target="_blank" class="card-link">
+            Read Article
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ══ GOOGLE MAPS / GMB ══ -->
+    <div class="section-header">
+      <div class="section-label">Find Us</div>
+      <div class="section-title">Visit Clean4u Amsterdam</div>
+      <div class="section-desc">Rated 5.0 ★ on Google — serving Amsterdam and the wider Netherlands with professional cleaning services.</div>
+    </div>
+
+    <div class="gmb-section">
+      <div class="gmb-inner">
+
+        <!-- Map embed -->
+        <div class="gmb-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.7!2d4.8881272!3d52.3630418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6efba659ad942697%3A0x186ec9b29c5734b!2sClean4u+Amsterdam!5e0!3m2!1sen!2snl!4v1"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Clean4u Amsterdam on Google Maps"
+          ></iframe>
+        </div>
+
+        <!-- GMB Info -->
+        <div class="gmb-info">
+          <div class="gmb-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+            </svg>
+            Verified Google Business
+          </div>
+
+          <h2>Clean4u Amsterdam</h2>
+
+          <div class="gmb-stars">
+            <span class="stars">★★★★★</span>
+            <span class="rating">5.0</span>
+            <span class="reviews">(8 reviews)</span>
+          </div>
+
+          <div class="gmb-details">
+            <div class="gmb-detail">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+              <span>Kerkstraat 204, 1017 GV Amsterdam</span>
+            </div>
+            <div class="gmb-detail">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+              </svg>
+              <span><strong>House Cleaning</strong> — End of Tenancy · Move Out · Deep Cleaning</span>
+            </div>
+            <div class="gmb-detail">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9"/>
+              </svg>
+              <span><a href="https://amsterdamcleaning.com/" rel="noopener noreferrer" target="_blank" style="color:#2563eb;font-weight:600;text-decoration:underline;text-decoration-color:#bfdbfe;">amsterdamcleaning.com</a></span>
+            </div>
+          </div>
+
+          <div class="gmb-hours">
+            <div class="gmb-hours-title">Opening Hours</div>
+            <div class="gmb-hours-grid">
+              <div class="gmb-hour-row"><span class="day">Monday</span><span class="time">08:00–18:00</span></div>
+              <div class="gmb-hour-row"><span class="day">Tuesday</span><span class="time">08:00–18:00</span></div>
+              <div class="gmb-hour-row"><span class="day">Wednesday</span><span class="time">08:00–18:00</span></div>
+              <div class="gmb-hour-row"><span class="day">Thursday</span><span class="time">08:00–18:00</span></div>
+              <div class="gmb-hour-row"><span class="day">Friday</span><span class="time">08:00–18:00</span></div>
+              <div class="gmb-hour-row"><span class="day">Saturday</span><span class="time">08:00–16:00</span></div>
+              <div class="gmb-hour-row"><span class="day">Sunday</span><span class="closed">Closed</span></div>
+            </div>
+          </div>
+
+          <div class="gmb-actions">
+            <a href="https://www.google.com/maps/place/Clean4u+Amsterdam/@52.3630418,4.8881272,803m/data=!3m2!1e3!4b1!4m6!3m5!1s0x6efba659ad942697:0x186ec9b29c5734b!8m2!3d52.3630418!4d4.8907021!16s%2Fg%2F11m_553qdy?entry=ttu" rel="noopener noreferrer" target="_blank" class="gmb-btn-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+              View on Google Maps
+            </a>
+            <a href="https://posts.gle/mokKmdNkPgzMDNBs9" rel="noopener noreferrer" target="_blank" class="gmb-btn-secondary">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
+              </svg>
+              Request a Quote
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ══ BACKLINKS ══ -->
+    <div class="section-header">
+      <div class="section-label">All Resources</div>
+      <div class="section-title">Quick Links & Backlinks</div>
+      <div class="section-desc">Direct links to every guide, service page and resource in the Clean4u Amsterdam network.</div>
+    </div>
+
+    <div class="backlinks-section">
+      <div class="backlinks-grid">
+
+        <a href="https://amsterdamcleaning.com/" rel="noopener noreferrer" target="_blank" class="backlink-item">
+          <div class="bl-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+          </div>
+          <div class="bl-text">
+            <div class="bl-title">Clean4u Amsterdam — Homepage</div>
+            <div class="bl-url">amsterdamcleaning.com</div>
+          </div>
+          <div class="bl-arrow"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></div>
+        </a>
+
+        <a href="https://objectstorage.eu-amsterdam-1.oraclecloud.com/n/axbpp0iicxjv/b/cleaning-service-amsterdam/o/Clean4u%20Amsterdam%20end-of-tenancy-cleaning-amsterdam.html" rel="noopener noreferrer" target="_blank" class="backlink-item">
+          <div class="bl-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <div class="bl-text">
+            <div class="bl-title">Clean4u — End of Tenancy Guide (Oracle Cloud)</div>
+            <div class="bl-url">objectstorage.eu-amsterdam-1.oraclecloud.com</div>
+          </div>
+          <div class="bl-arrow"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></div>
+        </a>
+
+        <a href="https://amsterdamcleaning.com/end-of-tenancy-cleaning/" rel="noopener noreferrer" target="_blank" class="backlink-item">
+          <div class="bl-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+          </div>
+          <div class="bl-text">
+            <div class="bl-title">End of Tenancy Cleaning Amsterdam</div>
+            <div class="bl-url">amsterdamcleaning.com/end-of-tenancy-cleaning</div>
+          </div>
+          <div class="bl-arrow"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></div>
+        </a>
+
+        <a href="https://amsterdamcleaning.com/move-out-cleaning/" rel="noopener noreferrer" target="_blank" class="backlink-item">
+          <div class="bl-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/></svg>
+          </div>
+          <div class="bl-text">
+            <div class="bl-title">Move Out Cleaning Amsterdam</div>
+            <div class="bl-url">amsterdamcleaning.com/move-out-cleaning</div>
+          </div>
+          <div class="bl-arrow"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></div>
+        </a>
+
+        <a href="https://amsterdamcleaning.com/deep-cleaning-service/" rel="noopener noreferrer" target="_blank" class="backlink-item">
+          <div class="bl-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+          </div>
+          <div class="bl-text">
+            <div class="bl-title">Deep Cleaning Service Amsterdam</div>
+            <div class="bl-url">amsterdamcleaning.com/deep-cleaning-service</div>
+          </div>
+          <div class="bl-arrow"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></div>
+        </a>
+
+        <a href="https://amsterdamcleaning.com/move-in-cleaning/" rel="noopener noreferrer" target="_blank" class="backlink-item">
+          <div class="bl-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"/></svg>
+          </div>
+          <div class="bl-text">
+            <div class="bl-title">Move In Cleaning Amsterdam</div>
+            <div class="bl-url">amsterdamcleaning.com/move-in-cleaning</div>
+          </div>
+          <div class="bl-arrow"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></div>
+        </a>
+
+        <a href="https://amsterdamcleaning.com/carpet-cleaning/" rel="noopener noreferrer" target="_blank" class="backlink-item">
+          <div class="bl-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>
+          </div>
+          <div class="bl-text">
+            <div class="bl-title">Carpet Cleaning Amsterdam</div>
+            <div class="bl-url">amsterdamcleaning.com/carpet-cleaning</div>
+          </div>
+          <div class="bl-arrow"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></div>
+        </a>
+
+        <a href="https://amsterdamcleaning.com/sofa-cleaning/" rel="noopener noreferrer" target="_blank" class="backlink-item">
+          <div class="bl-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path stroke-linecap="round" stroke-linejoin="round" d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+          </div>
+          <div class="bl-text">
+            <div class="bl-title">Sofa & Upholstery Cleaning Amsterdam</div>
+            <div class="bl-url">amsterdamcleaning.com/sofa-cleaning</div>
+          </div>
+          <div class="bl-arrow"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></div>
+        </a>
+
+        <a href="https://clean4useostorage.blob.core.windows.net/$web/deep%20cleaning%20vs%20regular%20cleaning%20cost.html" rel="noopener noreferrer" target="_blank" class="backlink-item">
+          <div class="bl-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+          </div>
+          <div class="bl-text">
+            <div class="bl-title">Deep Cleaning vs Regular Cleaning Cost</div>
+            <div class="bl-url">clean4useostorage.blob.core.windows.net</div>
+          </div>
+          <div class="bl-arrow"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></div>
+        </a>
+
+        <a href="https://clean4useostorage.blob.core.windows.net/$web/cleaning-services-amsterdam.html" rel="noopener noreferrer" target="_blank" class="backlink-item">
+          <div class="bl-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+          </div>
+          <div class="bl-text">
+            <div class="bl-title">Cleaning Services Amsterdam — Full Guide</div>
+            <div class="bl-url">clean4useostorage.blob.core.windows.net</div>
+          </div>
+          <div class="bl-arrow"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></div>
+        </a>
+
+        <a href="https://clean4useostorage.blob.core.windows.net/$web/move%20out%20cleaning%20amsterdam.html" rel="noopener noreferrer" target="_blank" class="backlink-item">
+          <div class="bl-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+          </div>
+          <div class="bl-text">
+            <div class="bl-title">Move Out Cleaning Amsterdam Guide</div>
+            <div class="bl-url">clean4useostorage.blob.core.windows.net</div>
+          </div>
+          <div class="bl-arrow"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></div>
+        </a>
+
+        <a href="https://cleaningserviceamsterdam.ams3.digitaloceanspaces.com/pros-cons-end-of-tenancy-cleaning-amsterdam.html" rel="noopener noreferrer" target="_blank" class="backlink-item">
+          <div class="bl-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+          </div>
+          <div class="bl-text">
+            <div class="bl-title">Pros & Cons: DIY vs Professional Cleaning</div>
+            <div class="bl-url">cleaningserviceamsterdam.ams3.digitaloceanspaces.com</div>
+          </div>
+          <div class="bl-arrow"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></div>
+        </a>
+
+        <a href="https://clean4u-asterdam-2026.s3.eu-central-003.backblazeb2.com/end-of-tenancy-cleaning-checklist-amsterdam.html" rel="noopener noreferrer" target="_blank" class="backlink-item">
+          <div class="bl-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <div class="bl-text">
+            <div class="bl-title">End of Tenancy Cleaning Checklist Amsterdam</div>
+            <div class="bl-url">clean4u-asterdam-2026.s3.eu-central-003.backblazeb2.com</div>
+          </div>
+          <div class="bl-arrow"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></div>
+        </a>
+
+        <a href="https://amsterdam-cleaning-seo-backlinks.nl-ams-1.linodeobjects.com/what-to-expect-end-of-tenancy-cleaning-amsterdam.html" rel="noopener noreferrer" target="_blank" class="backlink-item">
+          <div class="bl-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <div class="bl-text">
+            <div class="bl-title">What to Expect: End of Tenancy Cleaning</div>
+            <div class="bl-url">amsterdam-cleaning-seo-backlinks.nl-ams-1.linodeobjects.com</div>
+          </div>
+          <div class="bl-arrow"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></div>
+        </a>
+
+        <a href="https://www.google.com/maps/place/Clean4u+Amsterdam/@52.3630418,4.8881272,803m/data=!3m2!1e3!4b1!4m6!3m5!1s0x6efba659ad942697:0x186ec9b29c5734b!8m2!3d52.3630418!4d4.8907021!16s%2Fg%2F11m_553qdy?entry=ttu" rel="noopener noreferrer" target="_blank" class="backlink-item">
+          <div class="bl-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <div class="bl-text">
+            <div class="bl-title">Clean4u Amsterdam — Google Maps</div>
+            <div class="bl-url">google.com/maps — Kerkstraat 204, Amsterdam ★ 5.0</div>
+          </div>
+          <div class="bl-arrow"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></div>
+        </a>
+
+        <a href="https://posts.gle/mokKmdNkPgzMDNBs9" rel="noopener noreferrer" target="_blank" class="backlink-item">
+          <div class="bl-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+          </div>
+          <div class="bl-text">
+            <div class="bl-title">Request a Quote — Google Business Post</div>
+            <div class="bl-url">posts.gle/mokKmdNkPgzMDNBs9</div>
+          </div>
+          <div class="bl-arrow"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></div>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- ══ CTA ══ -->
+    <div class="cta-block">
+      <h2>Ready for a Stress-Free Move Out?</h2>
+      <p>Let Clean4u handle the cleaning — guaranteed results, eco-friendly products, no hidden fees.</p>
+      <a href="https://amsterdamcleaning.com/end-of-tenancy-cleaning/" rel="noopener noreferrer" target="_blank" class="cta-btn">Book End of Tenancy Clean →</a>
+    </div>
+
+  </div>
+
+  <footer class="site-footer">
+    <p>© 2025 <a href="https://amsterdamcleaning.com/" rel="noopener noreferrer" target="_blank">Clean4u Amsterdam</a> — Professional Cleaning Services in Amsterdam &amp; the Netherlands.<br>
+    Kerkstraat 204, 1017 GV Amsterdam &nbsp;|&nbsp; <a href="https://www.google.com/maps/place/Clean4u+Amsterdam/@52.3630418,4.8881272,803m/" rel="noopener noreferrer" target="_blank">★ 5.0 on Google Maps</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
